@@ -1,0 +1,386 @@
+/* Basics */
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    }
+    body{
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    section{
+        display: block;
+    }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+
+/* Nav bar styles */
+.sticky-nav{
+    position: fixed;
+    top: 0;
+    z-index: 40;
+    background-color: rgb(245, 245, 245, 0.90);
+    width: 100%;
+    padding: 2.188rem 0;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.625rem 0;
+}
+
+nav li{
+    padding: 0 0.938rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+nav ul li a{
+    color: #08203a;
+    font-size: 30px;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+/* Nav bar end */
+
+
+/* Home Style */
+.sec1{
+    margin-top: 4.5rem;
+    padding-top: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.25rem;
+    background-color: #fff;
+}
+
+.profilepic{
+
+    /* flex-direction: column; */
+    width: 35rem;
+    height: 35rem;
+    margin-left: 2rem;
+    border-radius: 50%;
+}
+
+.txt-cont{
+    display: flex;
+    /* flex-direction: column; */
+    margin: 0;
+    padding: 0;
+}
+
+.desc{	
+    display: flex;
+    font-size: 3.125rem;	
+    margin: 0 1.25rem;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* padding-right: 5px; */
+    
+}
+
+.name{
+    color: rgba(239, 6, 243, 0.868);
+    font-size: 4.375rem;
+    margin: 0 0 0.625rem 1.25rem;
+    padding: 0.313rem 0;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h5{
+    flex-direction: column;
+    margin: 0 1.25rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-1{
+    display: flex;
+    font-size: 1.25rem;
+    margin: 1.25rem;
+    width: 6.25rem;
+    background-color: #fff;
+    border-radius: 6%;
+    padding: 0.125rem;
+    border: 0.125rem  solid black;
+    color: rgb(97, 15, 44);
+    background-color: azure;
+}
+
+/* About Content Styles */
+.sec2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 2rem;  
+    min-height: 100vh;
+    flex-wrap: wrap;
+    padding-top: 4.5rem;
+}
+
+.abt-pic{
+    width: 30rem;
+    height: auto;
+    border-radius: 10%;
+    margin-right: 3rem;
+
+}
+
+
+.abt-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 40rem;
+}
+
+.name2{
+    text-align: left;
+    font-size: 2.5rem;
+    font-family: cursive;
+    margin-bottom: 1rem;
+}
+
+.desc2{
+    /* align-items: first baseline; */
+    margin: 0;
+    font-size: 1.5rem;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    line-height: 1.6;
+}
+
+
+
+/* Projects */
+.sec-3{
+    background-color: #9be4e6;
+    text-align: center;
+    padding:1.25rem;
+    padding-top: 6.5rem;
+}
+
+.proj-tlt{
+    font-size: 3rem;
+    margin-bottom: 1.25rem ;
+    font-weight: bolder;
+}
+
+
+.proj-desc{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    font-size: 1.25rem;
+    /* padding: 3rem; */
+    padding-bottom: 6rem;
+    justify-content: center;
+}
+
+.project-box{
+    border: 2px solid black;
+    background-color: darkkhaki;
+    position: relative;
+    height: 20rem;
+    width: 20rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    color: black;
+    text-align: center;
+    }
+
+    .project-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    }
+
+    /* GitHub buttons to be centered */
+    .git-btn1, .git-btn2 {
+    align-self: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 1rem;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    background-color: azure;
+    border-radius: 5px;
+    }
+
+    .git-btn1:hover, .git-btn2:hover {
+    background-color: #df1010;
+    }
+
+    /* Qulaifications */
+
+    .sec-4{
+        background-color:rgb(211, 211, 211);
+        text-align: center;
+        padding:1.25rem;
+        padding-top: 6.5rem;
+    }
+    .quali-desc{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        font-size: 1.25rem;
+        padding: 3rem;
+        justify-content: center;
+    }
+
+
+    
+    
+    .quali-tlt{
+        font-size: 3rem;
+        margin-bottom: 1.25rem ;
+        font-weight: bolder;
+    }
+    
+    
+    .quali-desc{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        font-size: 1rem;
+        padding: 3rem;
+        justify-content: center;
+    }
+    
+    .quali-box{
+        border: 2px solid black;
+        background-color: rgb(69, 180, 123);
+        position: relative;
+        height: 20rem;
+        width: 20rem;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+        color: black;
+        text-align: center;
+        }
+    
+        .quali-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        }
+
+    /* Contact */
+    .sec-5{
+        padding: 7.5rem;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        background-color:bisque;
+    }
+
+    .con-det{
+        border-radius: 2%;
+        background-color: #ccb3ff;
+        border: 2px solid black;
+        padding: 1rem;
+        text-align: center;
+        padding-bottom: 4rem;
+
+        
+    }
+    
+    .in-ct{
+       background-color: white;
+       padding: 2rem;
+       width: 40rem;
+       
+       
+    }
+
+    .con-tlt{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+    }
+
+    .con-title{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .sub{
+        border: 2px solid black;
+        
+        background-color: lightgray;
+        color: black;
+        font-weight: bold;
+
+    }
+
+    .sub a{
+        text-decoration: none;
+        font-weight: bold;
+    
+    }
+
+    /* Footer */
+    .sec-6{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1.25rem;
+        }
+
+
+    .lo-img{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 2rem;
+        height: 2rem;
+        transition: 0.3s ease;
+    }
+
+    .lo-lin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .lo-img:hover{
+        transform: scale(1.5);
+    }
+
+
+
+    
+
+   
+
+    
+    
+    
+    
