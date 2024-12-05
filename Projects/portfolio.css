@@ -1,0 +1,631 @@
+/* Basics */
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    }
+    body{
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    section{
+        display: block;
+    }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+
+/* Nav bar styles */
+.sticky-nav{
+    position: fixed;
+    top: 0;
+    /* z-index: 40; */
+    background-color: rgb(245, 245, 245, 0.90);
+    width: 100%;
+    padding: 2.188rem 0;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.625rem 0;
+}
+
+nav li{
+    padding: 0 0.938rem;
+    /* font-size: large; */
+    font-weight: bold;
+}
+
+nav ul li a{
+    color: #08203a;
+    font-size: 30px;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+/* Nav bar end */
+
+
+/* Home Style */
+.sec1{
+    margin-top: 4.5rem;
+    padding-top: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.25rem;
+    background-color: #fff;
+}
+
+.profilepic{
+    width: 35rem;
+    height: 35rem;
+    margin-left: 2rem;
+    border-radius: 50%;
+    /* flex-direction: column; */
+}
+
+.txt-cont{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* flex-direction: column; */
+}
+
+.desc{	
+    /* display: flex; */
+    font-size: 3.125rem;	
+    margin: 0 1.25rem;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* padding-right: 5px; */
+    
+}
+
+.name{
+    color: rgba(239, 6, 243, 0.868);
+    font-size: 4.375rem;
+    margin: 0 0 0.625rem 1.25rem;
+    padding: 0.313rem 0;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h5{
+    flex-direction: column;
+    margin: 0 1.25rem;
+    font-size: 1.5rem;
+    /* line-height: 1.2;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+} 
+
+.btn-1{
+    display: flex;
+    font-size: 1.25rem;
+    margin: 1.25rem;
+    width: 6.25rem;
+    background-color: #fff;
+    border-radius: 6%;
+    padding: 0.125rem;
+    border: 0.125rem  solid black;
+    color: rgb(97, 15, 44);
+    background-color: azure;
+}
+
+/* About Content Styles */
+.sec2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 2rem;  
+    min-height: 100vh;
+    flex-wrap: wrap;
+    padding-top: 4.5rem;
+}
+
+.abt-pic{
+    width: 30rem;
+    height: auto;
+    border-radius: 10%;
+    margin-right: 3rem;
+
+}
+
+
+.abt-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 40rem;
+}
+
+.name2{
+    text-align: left;
+    font-size: 2.5rem;
+    font-family: cursive;
+    margin-bottom: 1rem;
+}
+
+.desc2{
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    /* align-items: first baseline; */
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+
+
+/* Projects */
+.sec-3{
+    background-color: #9be4e6;
+    text-align: center;
+    padding:1.25rem;
+    padding-top: 6.5rem;
+}
+
+.proj-tlt{
+    font-size: 3rem;
+    margin-bottom: 1.25rem ;
+    font-weight: bolder;
+}
+
+
+.proj-desc{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    font-size: 1.25rem;
+    padding-bottom: 6rem;
+    justify-content: center;
+     /* padding: 3rem; */
+}
+
+.project-box{
+    border: 2px solid black;
+    background-color: darkkhaki;
+    position: relative;
+    height: 20rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    /* width: 20rem; */
+    /* color: black; */
+    /* text-align: center; */
+    }
+
+    .project-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    }
+
+    /* GitHub buttons to be centered */
+    
+    .git-btn1, .git-btn2 {
+    padding: 10px;
+    position: absolute;
+    bottom: 1rem;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    background-color: azure;
+    border-radius: 5px;
+    align-self: center;
+    }
+
+    .git-btn1:hover, .git-btn2:hover {
+    background-color: darkorange;
+    }
+
+    /* Qulaifications */
+
+    .sec-4{
+        background-color:rgb(211, 211, 211);
+        text-align: center;
+        padding:1.25rem;
+        padding-top: 6.5rem;
+    }
+    .quali-desc{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        font-size: 1.25rem;
+        padding: 3rem;
+        justify-content: center;
+    }
+
+
+    
+    
+    .quali-tlt{
+        font-size: 3rem;
+        margin-bottom: 1.25rem ;
+        font-weight: bolder;
+    }
+    
+    
+    .quali-desc{
+        font-size: 1rem;
+        /* display: flex;
+        position: relative;
+        flex-direction: row; */
+        /* padding: 3rem;
+        justify-content: center; */
+    }
+    
+    .quali-box{
+        border: 2px solid black;
+        background-color: rgb(69, 180, 123);
+        position: relative;
+        height: 20rem;
+        width: 20rem;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+        color: black;
+        text-align: center;
+        }
+    
+        .quali-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        }
+
+    /* Contact */
+    .sec-5{
+        padding: 7.5rem;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        background-color:bisque;
+    }
+
+    .con-det{
+        border-radius: 2%;
+        background-color: #ccb3ff;
+        border: 2px solid black;
+        padding: 1rem;
+        text-align: center;
+        padding-bottom: 4rem;
+
+        
+    }
+    
+    .in-ct{
+       background-color: white;
+       padding: 2rem;
+       width: 40rem;
+       
+       
+    }
+
+    .con-tlt{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+    }
+
+    .con-title{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .sub{
+        border: 2px solid black;
+        
+        background-color: lightgray;
+        color: black;
+        font-weight: bold;
+
+    }
+
+    .sub a{
+        text-decoration: none;
+        font-weight: bold;
+    
+    }
+
+    /* Footer */
+    .sec-6{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1.25rem;
+        }
+
+
+    .contact-info{
+     margin: 0;   
+    }
+
+
+    .foot{
+        display: flex;
+        gap: 10px;
+    }
+
+
+    .lo-img{
+        width: 2rem;
+        height: 2rem;
+        transition: 0.3s ease;
+    }
+
+    .lo-lin {
+        text-decoration: none;
+    }
+
+    .lo-img:hover{
+        transform: scale(1.5);
+    }
+
+
+
+
+    /* Media Quieres */
+
+
+/* Mobile devices (up to 600px wide) */
+@media (max-width: 600px) {
+    /* Navbar */
+    .sticky-nav {
+        padding: 0.5rem 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    /* Home Section */
+    .sec1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .profilepic {
+        width: 15rem;
+        height: 15rem;
+        margin: 1rem 0;
+    }
+
+    .desc {
+        font-size: 1.8rem;
+    }
+
+    .name {
+        font-size: 2.2rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    /* About Section */
+    .sec2 {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .abt-pic {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .abt-txt {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .name2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .desc2 {
+        font-size: 1.2rem;
+    }
+
+    /* Projects Section */
+    .proj-desc {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .project-box {
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .proj-desc {
+        font-size: 1rem;
+    }
+
+    .git-btn1,
+    .git-btn2 {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Qualifications Section */
+    .quali-desc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quali-box {
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .quali-title {
+        font-size: 1.2rem;
+    }
+
+    .quali-desc {
+        font-size: 1rem;
+    }
+
+    /* Contact Section */
+    .sec-5 {
+        padding: 1rem;
+    }
+
+    .con-det {
+        padding: 1rem;
+    }
+
+    .in-ct {
+        width: 90%;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .sub {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Footer */
+    .sec-6 {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .lo-img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+
+/* Tablets (600px to 900px wide) */
+@media (min-width: 601px) and (max-width: 900px) {
+    nav ul li a {
+        font-size: 25px;
+    }
+
+    .profilepic {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .desc {
+        font-size: 2.5rem;
+    }
+
+    .name {
+        font-size: 3.5rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    .abt-pic {
+        width: 25rem;
+        margin: 0 2rem 1rem 0;
+    }
+
+    .abt-txt {
+        max-width: 30rem;
+    }
+
+    .proj-desc {
+        flex-direction: column;
+    }
+
+    .project-box {
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    .quali-desc {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .quali-box {
+        width: 45%;
+        margin: 1rem;
+    }
+
+    .in-ct {
+        width: 80%;
+    }
+}
+
+/* Large screens (900px to 1200px wide) */
+@media (min-width: 901px) and (max-width: 1200px) {
+    .profilepic {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .desc {
+        font-size: 2.8rem;
+    }
+
+    .name {
+        font-size: 4rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    .abt-pic {
+        width: 28rem;
+    }
+
+    .proj-desc {
+        justify-content: space-around;
+    }
+
+    .quali-box {
+        width: 30%;
+    }
+
+    .in-ct {
+        width: 70%;
+    }
+}
